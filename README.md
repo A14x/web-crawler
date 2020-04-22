@@ -1,6 +1,6 @@
 # This is going to be a simple web spider/crawler to familiarise myself with the go language
 
-# Aim
+## Aim
   - Given a seed URL
   - Send GET request or Header request for webpage.
   - Scan webpage for Regex or hrefs
@@ -13,8 +13,10 @@
 
 
 
-#Libraries
-  - net/http  `http requests` https://golang.org/pkg/net/http/
-  - fmt (for console logging)
-  - html `allows formatting to get rid of escape chars e.g. "&lt;" -> "<"` https://golang.org/pkg/html/
-  - web interface stuff https://golang.org/doc/articles/wiki/
+## Libraries
+  - `net/http`  http requests https://golang.org/pkg/net/http/
+  - `fmt` (for console logging)
+  - `html` allows formatting to get rid of escape chars e.g. "&lt;" -> "<" https://golang.org/pkg/html/
+  -  web interface stuff https://golang.org/doc/articles/wiki/
+  - `strings` to find substrings within responses (using `index()`) https://golang.org/pkg/strings/#Index
+  - `io/ioutil` IO utilities used in this case for collecting get request response and for writing and reading files https://golang.org/pkg/io/ioutil/
